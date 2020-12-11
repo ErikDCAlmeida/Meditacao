@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/template.css"/>
+    
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex'){
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            })
+        };
+    </script>
+    <title>Centro de Meditação</title>
+    
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/images/logo.png" alt="Logo"/>
+                </a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <div class="menuMobile">
+                        <div class="menuLine"></div>
+                        <div class="menuLine"></div>
+                        <div class="menuLine"></div>
+                    </div>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">cadastro</a></li>
+                        <li><a href="">notícias</a></li>
+                        <li><a href="">ajuda</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="sectionBanner">
+        <div class="container column">
+            <div class="texto">
+                <h1>Meditação é autocontrole</h1>
+                <h3>Meditar é tranquilizar e controlar o corpo e a mente!</u></h3>
+            </div>
+            <div class="cardsBanner">
+                <div class="card1">
+                    <div class="bannerTitle">
+                        Meditação Familiar
+                    </div>
+                    <div class="bannerDescricao">
+                        A meditação familiar é um dos meios mais tranquilos e fáceis para a resolução de conflitos familiares.
+                    </div>
+                    <a href="">READ MORE</a>
+                </div>
+                <div class="card2">
+                    <div class="bannerTitle">
+                        Corpo Leve
+                    </div>
+                    <div class="bannerDescricao">
+                        O corpo é uma mistura de substância "involuída", esqueleto de consciência e ação sobre o meio.
+                    </div>
+                    <a href="">READ MORE</a>
+                </div>
+                <div class="card3">
+                    <div class="bannerTitle">
+                        Horário dos Encontros
+                    </div>
+                    <div class="horarios">
+                        <div class="horario1">
+                            <div class="dia">
+                                Segunda-feira
+                            </div>
+                            <div class="horario">
+                                8:00 - 12:00
+                            </div>
+                        </div>
+                        <div class="horario2">
+                            <div class="dia">
+                                Quarta-feira
+                            </div>
+                            <div class="horario">
+                                14:00 - 18:00
+                            </div>
+                        </div>
+                        <div class="horario3">
+                            <div class="dia">
+                                Sexta-feira
+                            </div>
+                            <div class="horario">
+                                10:00 - 14:00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sectionConteudo">
+        <div class="container">
+            <section>
+                <div class="widgetTitle">
+                    <div class="widgetTitleText">Últimas Notícias</div>
+                    <div class="widgetTitleBar"></div>
+                </div>
+                <div class="widgetBody flex">
+                    <article>
+                        <a href="">
+                            <div class="ultimaNoticiaData">
+                                <div class="dataNoticiaPostada">01/01/2020</div>
+                                <div class="comentariosNoticiaPostada">21</div>
+                            </div>
+                            <div class="imagemNoticia">
+                                <img src="./assets/images/flower.jpeg" alt="Flor">
+                            </div>
+                            <div class="noticiaTitle">Flores</div>
+                            <div class="resumoNoticias">As flores nos inspiram beleza e leveza, parecem ter sido feitas para o deleite de nossos sentidos. A apreciação silenciosa do belo que graciosamente nos é dado pela Natureza, pode ser o início de uma meditação.</div>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="">
+                            <div class="ultimaNoticiaData">
+                                <div class="dataNoticiaPostada">11/01/2020</div>
+                                <div class="comentariosNoticiaPostada">17</div>
+                            </div>
+                            <div class="imagemNoticia">
+                                <img src="./assets/images/mountain.jpeg" alt="Montanha">
+                            </div>
+                            <div class="noticiaTitle">Montanhas com Névoa</div>
+                            <div class="resumoNoticias">Montanha ou monte é uma forma de relevo. Uma sequência de montanhas denomina-se cordilheira. Uma montanha tem imponência e altitude superiores a uma colina, embora não exista uma altitude específica para essa diferenciação. O adjetivo montano é usado para descrever áreas montanhosas e coisas relacionadas a elas</div>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="">
+                            <div class="ultimaNoticiaData">
+                                <div class="dataNoticiaPostada">22/01/2020</div>
+                                <div class="comentariosNoticiaPostada">10</div>
+                            </div>
+                            <div class="imagemNoticia">
+                                <img src="./assets/images/sea.jpeg" alt="Oceano">
+                            </div>
+                            <div class="noticiaTitle">Oceano</div>
+                            <div class="resumoNoticias">Oceano é o componente principal da superfície da Terra, constituído por água salgada. Forma a maior parte da hidrosfera: aproximadamente 71% da superfície da Terra. Mais do que a metade desta área tem profundidades maiores que 3 mil metros.</div>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="">
+                            <div class="ultimaNoticiaData">
+                                <div class="dataNoticiaPostada">30/01/2020</div>
+                                <div class="comentariosNoticiaPostada">30</div>
+                            </div>
+                            <div class="imagemNoticia">
+                                <img src="./assets/images/gift.jpeg" alt="Presente">
+                            </div>
+                            <div class="noticiaTitle">Presente</div>
+                            <div class="resumoNoticias">Presente é tudo aquilo que se oferece, de forma gratuita, a outro indivíduo com a intenção de fazer este mais feliz, em sinal de atenção, confiança, amor ou amizade e que seja de forma espontânea.</div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <aside>
+                <div class="widgetTitle">
+                    <div class="widgetTitleText">Departamentos</div>
+                    <div class="widgetTitleBar"></div>
+                </div>
+                <div class="widgetBody flex">
+                    <article class="articleAside">
+                        <a href="">
+                            <div class="banner">
+                                <img src="./assets/images/flower.jpeg" alt="Flor"/>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="articleAside">
+                        <a href="">
+                            <div class="banner">
+                                <img src="./assets/images/gift.jpeg" alt="Presente">
+                            </div>
+                        </a>
+                    </article>
+                    <article class="articleAside">
+                        <a href="">
+                            <div class="banner">
+                                <img src="./assets/images/happyWoman.jpg" alt="Mulher feliz">
+                            </div>
+                        </a>
+                    </article>
+                    <article class="articleAside">
+                        <a href="">
+                            <div class="banner">
+                                <img src="./assets/images/mountain.jpeg" alt="Montanha">
+                            </div>
+                        </a>
+                    </article>
+                    <article class="articleAside">
+                        <a href="">
+                            <div class="banner">
+                                <img src="./assets/images/sea.jpeg" alt="Mar">
+                            </div>
+                        </a>
+                    </article>
+                    <article class="articleAside">
+                        <a href="">
+                            <div class="banner">
+                                <img src="./assets/images/flower.jpeg" alt="Flor">
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="widgetTitle">
+                    <div class="widgetTitleText">Ajuda Online</div>
+                    <div class="widgetTitleBar"></div>
+                </div>
+                <div class="widgetBody">
+                    <div class="tituloAjuda">
+                        Aqui você encontrará os nossos contatos para fins de dúvida e aconselhamento. Temos conselheiros e pessoas dispostas a tornarem seu dia mais calmo e feliz!
+                    </div>
+                    <div class="opcoesContato">
+                        <div class="opcao">
+                            <div class="opcoesContatoBar"></div>
+                            <div>&#9742; (00) 9999-9999</div>
+                        </div>
+                        <div class="opcao">
+                            <div class="opcoesContatoBar"></div>
+                            <div>&#9993; centro-de-meditacao@cmt.com.br</div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container flexColumn">
+            <div class="footerCardsMenu">
+                <div class="fCardMenu1">
+                    <div class="bannerTitle">Paz e Alegria</div>
+                    <a href="">Saiba mais sobre o assunto clicando aqui. &rarr;</a>
+                </div>
+                <div class="fCardMenu2">
+                    <div class="bannerTitle">Perguntas Frequentes</div>
+                    <a href="">Saiba mais sobre o assunto clicando aqui. &rarr;</a>
+                </div>
+                <div class="fCardMenu3">
+                    <div class="bannerTitle">Chat Online</div>
+                    <a href="">Saiba mais sobre o assunto clicando aqui. &rarr;</a>
+                </div>
+            </div>
+            <div class="footerAreaBottom">
+                <div class="area">
+                    <div class="widgetTitle">
+                        <div class="widgetTitleText">História Recente</div>
+                        <div class="widgetTitleBar"></div>
+                    </div>
+                    <div class="widgetBody">
+                        <div class="historiasRecentes">
+                            <div class="tituloHistoria">
+                                A história de Mário e Joana que percorreu todos os cantos da terra e que deixou muitos maravilhados.
+                            </div>
+                            <div class="contatosPersonagensHistoria">
+                                <div class="endereco">
+                                    <div>São Paulo - SP</div>
+                                    <div>Rua das Neves</div>
+                                    <div>Apartamento Alameda - 1000</div>
+                                </div>
+                                <div class="telefones">
+                                    <div>Tel: (00) 1234-5678</div>
+                                    <div>Cel: (00) 0 1111-9999</div>
+                                    <div>E-mail: mario&joana@hotmail.com</div>
+                                </div>
+                            </div>
+                            <div class="redeSociaisPersHistoria">
+                                <a href=""><img src="assets/images/fbicon.png" alt="Facebook" height="20px" width="20px"/></a>
+                                <a href=""><img src="assets/images/instIcon.png" alt="Instagram" height="20px" width="20px"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="area">
+                    <div class="widgetTitle">
+                        <div class="widgetTitleText">Últimos Artigos</div>
+                        <div class="widgetTitleBar"></div>
+                    </div>
+                    <div class="widgetBody">
+                        <div class="artigos">
+                            <div class="infosArtigos">
+                                <div class="setasWidgetBody">
+                                    &rarr;
+                                </div>
+                                <div class="descricaArtigos">
+                                    As flores nos inspiram beleza e leveza, parecem ter sido feitas para o deleite de nossos sentidos.
+                                </div>
+                            </div>
+                            <div class="anoArtigo">
+                                <a href="">1 ano atrás</a>
+                            </div>
+                        </div>
+                        <div class="artigos">
+                            <div class="infosArtigos">
+                                <div class="setasWidgetBody">
+                                    &rarr;
+                                </div>
+                                <div class="descricaArtigos">
+                                    As flores nos inspiram beleza e leveza, parecem ter sido feitas para o deleite de nossos sentidos.
+                                </div>
+                            </div>
+                            <div class="anoArtigo">
+                                <a href="">1 ano atrás</a>
+                            </div>
+                        </div>
+                        <div class="artigos">
+                            <div class="infosArtigos">
+                                <div class="setasWidgetBody">
+                                    &rarr;
+                                </div>
+                                <div class="descricaArtigos">
+                                    As flores nos inspiram beleza e leveza, parecem ter sido feitas para o deleite de nossos sentidos.
+                                </div>
+                            </div>
+                            <div class="anoArtigo">
+                                <a href="">1 ano atrás</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="area">
+                    <div class="widgetTitle">
+                        <div class="widgetTitleText">Últimos Compartilhamentos</div>
+                        <div class="widgetTitleBar"></div>
+                    </div>
+                    <div class="widgetBody">
+                        <div class="artigos">
+                            <div class="infosArtigos">
+                                <div class="setasWidgetBody">
+                                    &rarr;
+                                </div>
+                                <div class="descricaArtigos ultCompart">
+                                    Oceano é o componente principal da superfície da Terra, constituído por água salgada. Forma a maior parte da hidrosfera: aproximadamente 71% da superfície da Terra.
+                                </div>
+                            </div>
+                            <div class="anoArtigo ultCompart">
+                                <a href="">1 ano atrás</a>
+                            </div>
+                        </div>
+                        <div class="artigos">
+                            <div class="infosArtigos">
+                                <div class="setasWidgetBody">
+                                    &rarr;
+                                </div>
+                                <div class="descricaArtigos ultCompart">
+                                    Oceano é o componente principal da superfície da Terra, constituído por água salgada. Forma a maior parte da hidrosfera: aproximadamente 71% da superfície da Terra.
+                                </div>
+                            </div>
+                            <div class="anoArtigo ultCompart">
+                                <a href="">1 ano atrás</a>
+                            </div>
+                        </div>
+                        <div class="artigos">
+                            <div class="infosArtigos">
+                                <div class="setasWidgetBody">
+                                    &rarr;
+                                </div>
+                                <div class="descricaArtigos ultCompart">
+                                    Oceano é o componente principal da superfície da Terra, constituído por água salgada. Forma a maior parte da hidrosfera: aproximadamente 71% da superfície da Terra.
+                                </div>
+                            </div>
+                            <div class="anoArtigo ultCompart">
+                                <a href="">1 ano atrás</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerCopy">&copy; Copyright - Tamplate de Aprendizagem e Autoral - Centro de Meditação by  <a href="https://github.com/ErikDCAlmeida">ErikDCAlmeida</a>.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

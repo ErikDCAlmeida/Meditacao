@@ -1,0 +1,576 @@
+/*============================CSS globais, ou seja, utilizado em mais de um local.============================*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*============================CSS do Header============================*/
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menuMobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.menuLine{
+    height: 4px;
+    border-radius: 10px;
+    background-color: #DF9F57;
+}
+nav ul, nav li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul{
+    display: flex;
+}
+nav a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+}
+nav a:hover{
+    background-color: #e6999f;
+    color: white;
+}
+
+
+/*============================CSS da primeira seção que contém o banner.============================*/
+#sectionBanner{
+    background-image: url('../images/happyWoman.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.texto{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.texto h1{
+    color: white;
+    font-size: 60px;
+    width: 400px;
+    text-shadow: 1px 2px 5px #555555;
+    margin: 0;
+    padding: 0;
+}
+.texto h3{
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 2px 5px rgb(39, 38, 38);
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+.cardsBanner{
+    height: 210px;
+    display: flex;
+}
+.cardsBanner a{
+    display: inline-block;
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    background-color: #e4a94c;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 12px;
+}
+.cardsBanner a:hover{
+    background-color: #f09185;
+    color: black;
+}
+.card1,
+.card2,
+.card3 {
+    flex: 1;
+    padding: 20px;
+}
+.card1{
+    background-color: #f08f2e;
+}
+.card2{
+    background-color: #DF9F57;
+}
+.card3{
+    background-color: #f09185;
+}
+.bannerTitle{
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px white;
+}
+.bannerDescricao{
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 70px;
+}
+.horario1,
+.horario2,
+.horario3{
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ca6e62;
+    font-size: 15px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.horario1 div{
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.horario2 div{
+    margin-bottom: 10px;
+}
+.horario3 div{
+    margin-bottom: 10px;
+}
+
+
+/*============================CSS da segunda section com conteúdos.============================*/
+#sectionConteudo{
+    display: flex;
+    justify-content: center;
+}
+#sectionConteudo section{
+    flex: 2;
+}
+#sectionConteudo aside{
+    flex: 1;
+}
+.widgetTitle{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widgetTitleText{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.widgetTitleBar{
+    margin-top: 5px;
+    background-color: #f09185;
+    height: 3px;
+    width: 70px;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+article{
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+article a{
+    text-decoration: none;
+}
+article .ultimaNoticiaData{
+    display: flex;
+}
+article .dataNoticiaPostada{
+    background-color: orange;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+article .comentariosNoticiaPostada{
+    background-color: rgb(247, 190, 84);
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: bold;
+}
+article .imagemNoticia{
+    margin-top: 20px;
+}
+article .imagemNoticia img{
+    width: 100%;
+    height: auto;
+}
+article .noticiaTitle{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+article .resumoNoticias{
+    color: black;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+}
+.articleAside{
+    flex: 2;
+    min-width: 200px;
+}
+article .banner img{
+    width: 100%;
+    height: 100%;
+}
+.banner{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    height: 200px;
+    background-color: #DF9F57;
+}
+
+
+/*============================CSS para o footer/rodapé da página.============================*/
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+footer .footerCardsMenu{
+    display: flex;
+}
+.fCardMenu1, .fCardMenu2, .fCardMenu3{
+    flex: 1;
+    color: black;
+    padding: 20px;
+}
+.fCardMenu1{
+    background-color: #f08f2e;
+}
+.fCardMenu2{
+    background-color: #DF9F57;
+}
+.fCardMenu3{
+    background-color: #f09185;
+}
+.footerAreaBottom{
+    display: flex;
+    color: white;
+}
+.bannerTitle{
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px white;
+}
+.area{
+    flex: 1;
+}
+.flexColumn{
+    flex-direction: column;
+}
+.widgetTitle{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widgetTitleText{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.widgetTitleBar{
+    margin-top: 5px;
+    background-color: #f09185;
+    height: 3px;
+    width: 70px;
+}
+footer .widgetTitleText{
+    color: white;
+}
+.footerCopy{
+    border-top: 1px solid #2c2c2c;
+    height: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.footerCopy a{
+    text-decoration: none;
+    color: orange;
+}
+.footerCardsMenu a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+.redeSociaisPersHistoria a {
+    margin-left: 2px;
+}
+.widgetBody{
+    padding: 5px;
+}
+.artigos{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-right: 5px;
+}
+.infosArtigos{
+    display: flex;
+}
+.setasWidgetBody{
+    margin-right: 5px;
+}
+.anoArtigo{
+    display: flex;
+    justify-content: flex-end;
+}
+.anoArtigo a{
+    text-decoration: none;
+    color: rgb(247, 181, 81);
+}
+.ultCompart{
+    color: #727272;
+}
+.historiasRecentes{
+    display: flex;
+    flex-direction: column;
+}
+.tituloHistoria{
+    margin-bottom: 10px;
+}
+.contatosPersonagensHistoria{
+    display: flex;
+}
+.telefones, .endereco{
+    flex-direction: column;
+    font-size: 13px;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.tituloAjuda{
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.opcoesContatoBar{
+    background-color: #dad6d6;
+    width: 100%;
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+
+/*===========================CSS para a responsividade===========================*/
+@media (max-width: 795px) {
+    .bannerTitle{
+        font-size: 20px;
+    }
+    .bannerDescricao{
+        font-size: 14px;
+    }
+    .footerCardsMenu{
+        flex-direction: column;
+    }
+    .footerAreaBottom{
+        flex-direction: column;
+    }.contatosPersonagensHistoria{
+        justify-content: space-between;
+    }
+    .area{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 660px) {
+    .bannerTitle {
+        font-size: 15px;
+    }
+    .bannerDescricao {
+        font-size: 13px;
+    }
+    .dia, .horario {
+        font-size: 12px;
+    }
+    .container {
+        flex-direction: column;
+    }
+
+    #geral section,
+    #geral aside {
+        padding: 20px;
+    }
+    
+    aside{
+        padding: 10px;
+    }
+    .widgetTitle{
+        padding: 5px;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    header{
+        height: auto;
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 555px){
+
+    .cardsBanner{
+        height: 400px;
+        flex-direction: column;
+    }
+    .card1,
+    .card2{
+        height: auto;
+
+    }
+    .card3{
+        height: 110px;
+    }
+    .horario1,
+    .horario2,
+    .horario3{
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .bannerDescricao{
+        margin-bottom: 0;
+        height: 35px;
+    }
+    .horarios{
+        height: 100px;
+    }
+    .footerCopy{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 411px){
+    .footerCopy{
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 400px){
+    .bannerTitle{
+        font-size: 15px;
+    }
+    .bannerDescricao{
+        font-size: 13px;
+    }
+    .texto h1{
+        font-size: 40px;
+    }
+    .texto h3{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px){
+    .bannerTitle{
+        font-size: 15px;
+    }
+    .bannerDescricao{
+        font-size: 13px;
+    }
+    .texto h1{
+        font-size: 45px;
+        width: 80%;
+    }
+    .texto h3{
+        font-size: 15px;
+        width: 85%;
+    }
+    .texto{
+        align-items: center;
+    }
+}
+
+@media (max-width: 345px){
+    .bannerTitle{
+        font-size: 14px;
+    }
+    .bannerDescricao{
+        font-size: 11px;
+    }
+    .texto h1{
+        font-size: 45px;
+        width: 80%;
+    }
+    .texto h3{
+        font-size: 15px;
+        width: 85%;
+    }
+    .texto{
+        align-items: center;
+    }
+}
+
+@media (max-width: 320px){
+    .bannerTitle{
+        font-size: 14px;
+    }
+    .bannerDescricao{
+        font-size: 11px;
+    }
+    .texto h1{
+        font-size: 35px;
+        width: 70%;
+    }
+    .texto h3{
+        font-size: 13px;
+        width: 70%;
+    }
+    .texto{
+        align-items: center;
+    }
+    .footerCopy{
+        font-size: 7.5px;
+    }
+}
+
+
